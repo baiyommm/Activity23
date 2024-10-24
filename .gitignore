@@ -1,0 +1,10 @@
+#ignoring specific file
+.env
+#ignoring specific directories
+/Activity23
+#ignoring specific file type
+*.xcodeproj
+#adding an exception
+!main.cpp
+!header.h
+!function.cpp

@@ -1,14 +1,23 @@
-//
-//  main.cpp
-//  Activity23
-//
-//  Created by Chatchapong Thuaypha on 10/23/24.
-//
-
 #include <iostream>
+#include "header.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace CustomerNumberValidator;
+using namespace std;
+
+int main() {
+    
+    string customerNumber;
+
+    cout << "Enter customer number: ";
+    cin >> customerNumber;
+
+    // Call to Function
+    if (CustomerNumberValidator::validateCustomerNumber(customerNumber)) {
+        cout << "Valid customer number." << endl;
+    } 
+    else {
+        cout << "Invalid customer number." << endl;
+    }
+
     return 0;
 }

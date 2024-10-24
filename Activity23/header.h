@@ -1,12 +1,9 @@
-//
-//  header.h
-//  Activity23
-//
-//  Created by Chatchapong Thuaypha on 10/23/24.
-//
+#ifndef HEADER_H
+#define HEADER_H
+#include <string>
 
-#ifndef header_h
-#define header_h
+namespace CustomerNumberValidator {
+    bool validateCustomerNumber(const std::string& customerNumber);
+}
 
-
-#endif /* header_h */
+#endif
